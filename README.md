@@ -36,8 +36,8 @@ Within Auth0, we have established 3 high level roles and have associated differe
 
 Here are the roles and permissions as defined in Auth0:
 - **Casting Assistant**: This lowest level role only has basic view capabilities. Permissions include...
-  - ```git:movies```
-  - ```git:actors```
+  - ```get:movies```
+  - ```get:actors```
 - **Casting Director**: As our middle tier role, this role inherits the same permissions from the Casting Assistant role as well as adds some additional permissions. These include...
   - ```post:movies```
   - ```post:actors```
