@@ -31,10 +31,10 @@ def create_app(test_config=None):
     """
     @app.route('/')
     def check_url():
-        greeting = "Hi there, the app is running"
+        greeting = "App is running."
         return jsonify({
             "success": True,
-            "message": greeting
+            "description": greeting
         })
 
     #################################### Private Endpoints ###########################
