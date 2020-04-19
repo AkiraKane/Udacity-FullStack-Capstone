@@ -77,15 +77,15 @@ Sample response:
 {
     "movies": [
         {
-            "id": 3,
-            "release_year": 2008,
-            "title": "Movie 3"
+            "id": 1,
+            "release_year": 2020,
+            "title": "Mystic River"
         },
         {
-            "id": 4,
-            "release_year": 1973,
-            "title": "Movie 4"
-        },
+            "id": 2,
+            "release_year": 2020,
+            "title": "Boss Level"
+        }
     ],
     "success": true
 }
@@ -99,19 +99,19 @@ Sample response:
 {
     "actors": [
         {
-            "age": 34,
-            "gender": "female",
-            "id": 3,
-            "movie_id": 2,
-            "name": "Actor 3"
+            "age": 64,
+            "gender": "male",
+            "id": 1,
+            "movie_id": 1,
+            "name": "Frank Grillo"
         },
         {
-            "age": 34,
-            "gender": "male",
-            "id": 4,
-            "movie_id": 3,
-            "name": "Actor 4"
-        },
+            "age": 35,
+            "gender": "female",
+            "id": 2,
+            "movie_id": 2,
+            "name": "Scarlett Johansson"
+        }
     ],
     "success": true
 }
@@ -119,55 +119,83 @@ Sample response:
 
 ### POST Endpoints
 
-#### POST /movies/create
+#### POST /movies/
 Creates a new movie entry in the database.
 
 Sample response:
 ```
 {
-    "movie_id": 8,
+    "movies": [
+        {
+            "id": 2,
+            "release_year": 2020,
+            "title": "Boss Level"
+        }
+    ],
     "success": true
 }
 ```
 
-#### POST /actors/create
+#### POST /actors/
 Creates a new actor / actress entry in the database.
 
 Sample response:
 ```
 {
-    "actor_id": 7,
+    "actors": [
+        {
+            "age": 64,
+            "gender": "male",
+            "id": 1,
+            "movie_id": 1,
+            "name": "Mel Gibson"
+        }
+    ],
     "success": true
 }
 ```
 
 ### PATCH Endpoints
 
-#### PATCH /movies/update/<movie_id>
+#### PATCH /movies/<movie_id>
 Updates movie information given a movie_id and newly updated attribute info.
 
 Sample response:
 ```
 {
-    "movie_id": 2,
+    "movies": [
+        {
+            "id": 1,
+            "release_year": 2020,
+            "title": "Mystic River"
+        }
+    ],
     "success": true
 }
 ```
 
-#### PATCH /actors/update/<actor_id>
+#### PATCH /actors/<actor_id>
 Updates actor information given a actor_id and newly updated attribute info.
 
 Sample response:
 ```
 {
-    "actor_id": 2,
+    "actors": [
+        {
+            "age": 64,
+            "gender": "male",
+            "id": 1,
+            "movie_id": 1,
+            "name": "Frank Grillo"
+        }
+    ],
     "success": true
 }
 ```
 
 ### DELETE Endpoints
 
-#### DELETE /movies/delete/<movie_id>
+#### DELETE /movies/<movie_id>
 Deletes a movie entry from the database given the inputted movie_id.
 
 Sample response:
@@ -178,13 +206,13 @@ Sample response:
 }
 ```
 
-#### DELETE /movies/actors/<actor_id>
+#### DELETE /actors/<actor_id>
 Deletes an actor / actress entry from the database given the inputted actor_id.
 
 Sample response:
 ```
 {
-    "deleted": 1,
+    "deleted": 2,
     "success": true
 }
 ```
