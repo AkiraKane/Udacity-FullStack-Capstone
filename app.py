@@ -31,7 +31,7 @@ def create_app(test_config=None):
     """
     @app.route('/')
     def check_url():
-        greeting = "App is running."
+        greeting = "Hi there! this app is running."
         return jsonify({
             "success": True,
             "description": greeting
