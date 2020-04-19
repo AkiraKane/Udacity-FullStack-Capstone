@@ -48,7 +48,10 @@ Here are the roles and permissions as defined in Auth0:
   - ```delele:actors```
 
 ### Auth0 Account Setup
-If you would like to setup your own account with my Auth0 instance, you can do so at the URL below. However, please note that this isn't much good for you unless add one of the respective roles above to your account. (I'm not sure how to do this in an automated fashion; this seems out of scope for this project.)
+If you would like to setup your own account with my Auth0 instance, you can do so at the URL below.
+
+Auth0 URL: https://fsnd-akira.auth0.com/authorize?audience=capstone&response_type=token&client_id=CBqsQEznfFkzE0daGmBDCy4ESapN3Sws&redirect_uri=https://127.0.0.1:8070/login-results
+
 
 ## API Endpoints
 
