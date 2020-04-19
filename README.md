@@ -2,7 +2,7 @@
 This project is my capstone project for the Udacity Full Stack Nanodegree. In it, we'll be leveraging several different pieces of technology to create web-hosted API with a database backend. The nature of this API has to do with movie casting. As we'll cover more down below, the API will cover pieces surrounding actors / actresses and their respective movies.
 
 ## Getting Started
-The application itself is hosted on the Heroku platform. You can navigate to it at this link: 
+The application itself is hosted on the Heroku platform. You can navigate to it at this link: [https://ming-capstone.herokuapp.com/](https://ming-capstone.herokuapp.com/).
 
 If you navigate to the app in the browser, you will be greeted with a basic message noting that the app is indeed up and running. In order to actually use this app, you will need to be authenticated with my Auth0 domain. We'll cover more in another section how you as a Udacity reviewer might interact with this with some pre-generated tokens via Postman.
 
